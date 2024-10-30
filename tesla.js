@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tooltip.style.top = y + 20 + 'px';
 
             // North America hover region
-            if (x > 100 && x < 300 && y > 100 && y < 200) {
+            if (x > 300 && x < 675 && y > 34 && y < 420) {
                 const continent = continentData.NorthAmerica;
                 tooltip.innerHTML = `
                     <strong>Continent:</strong> ${continent.name}<br>
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tooltip.style.display = 'block';
             }
             // South America hover region
-            else if (x > 200 && x < 400 && y > 300 && y < 500) {
+            else if (x > 490 && x < 635 && y > 423 && y < 630) {
                 const continent = continentData.SouthAmerica;
                 tooltip.innerHTML = `
                     <strong>Continent:</strong> ${continent.name}<br>
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tooltip.style.display = 'block';
             }
             // Europe hover region
-            else if (x > 500 && x < 700 && y > 100 && y < 200) {
+            else if (x > 683 && x < 867 && y > 170 && y < 345) {
                 const continent = continentData.Europe;
                 tooltip.innerHTML = `
                     <strong>Continent:</strong> ${continent.name}<br>
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tooltip.style.display = 'block';
             }
             // Africa hover region
-            else if (x > 450 && x < 600 && y > 300 && y < 400) {
+            else if (x > 661 && x < 852 && y > 356 && y < 554) {
                 const continent = continentData.Africa;
                 tooltip.innerHTML = `
                     <strong>Continent:</strong> ${continent.name}<br>
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tooltip.style.display = 'block';
             }
             // Asia hover region
-            else if (x > 700 && x < 900 && y > 150 && y < 300) {
+            else if (x > 868 && x < 1200 && y > 81 && y < 440) {
                 const continent = continentData.Asia;
                 tooltip.innerHTML = `
                     <strong>Continent:</strong> ${continent.name}<br>
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tooltip.style.display = 'block';
             }
             // Oceania hover region
-            else if (x > 900 && x < 1100 && y > 500 && y < 600) {
+            else if (x > 992 && x < 1184 && y > 474 && y < 594) {
                 const continent = continentData.Oceania;
                 tooltip.innerHTML = `
                     <strong>Continent:</strong> ${continent.name}<br>

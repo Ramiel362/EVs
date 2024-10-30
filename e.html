@@ -9,15 +9,47 @@
 <body>
     <!-- Hero Section -->
     <header class="hero-section">
-        <h1>The Future of Transportation: Electric Vehicles & Innovations</h1>
+        <h1>Viva La Electric Revolution!!</h1>
         <p>Explore the advancements in electric vehicle technology.</p>
-        <a href="#map-section">Explore The Map</a>
+        <a id="firsta" href="#leftcard">What are EVs and their Importance?</a>
+        <a id="seconda" href="#map-section">Explore The Map</a>
+        <a id="thirda" href="#tech-sectiona">Advancements</a>
+        <a href="#statistics">Statistics</a>
     </header>
+
+
+    <div class="ev-background-section">
+        <div class="ev-card" id="leftcard">
+          <div class="ev-card-content">
+            <h2>What is an Electric Vehicle (EV)?</h2>
+            <p>Electric Vehicles (EVs) are vehicles that run on electricity instead of conventional fuel like petrol or diesel. EVs use electric motors and batteries, making them eco-friendly and more efficient than traditional internal combustion engine (ICE) vehicles. By relying on renewable electricity, EVs play a crucial role in reducing greenhouse gas emissions and combating climate change.</p>
+            <p>Most EVs use Lithium-Ion batteries, similar to the ones in smartphones, but on a much larger scale. These batteries can be recharged through home charging stations, public fast chargers, or specialised EV charging networks, making it easy to "refuel" an EV.</p>
+            <div class="ev-images">
+              <img src="motor.jpeg" alt="Electric Motor" class="ev-img">
+              <img src="battery.jpg" alt="Battery" class="ev-img">
+              <img src="station.webp" alt="Charging Station" class="ev-img">
+            </div>
+          </div>
+        </div>
+        <div class="ev-card" id="rightcard">
+            <div class="ev-card-content">
+              <h2>Why Electric Vehicles are Important</h2>
+              <p>Electric Vehicles (EVs) are essential for building a sustainable future. They produce no tailpipe emissions, which significantly reduces air pollution in urban areas and helps address climate change by lowering greenhouse gases. EVs also decrease reliance on fossil fuels, making energy production and consumption cleaner and more efficient.</p>
+              <p>Most EVs are cheaper to run over time due to lower fuel and maintenance costs.  As EV adoption grows, it supports job creation in green technology sectors, such as battery manufacturing, charging infrastructure, and renewable energy, further driving the transition to a sustainable economy and a sustainable environment.</p>
+              <div class="ev-images">
+                <img src="env1.webp" alt="Electric Motor" class="ev-img">
+                <img src="env2.jpg" alt="Battery" class="ev-img">
+                <img src="env3.jpg" alt="Charging Station" class="ev-img">
+              </div>
+            </div>
+          </div>
+      </div>
+
 
     <!-- Interactive Map Section -->
     <section id="map-section" class="map-section">
         <h2>Global EV Adoption</h2>
-        <p>Hover over a country to see EV statistics.</p>
+        <p>Hover over a country to see EV statistics, as of 2024.</p>
         <div class="map-container">
             <img src="world-map.png" alt="World Map" class="map" id="world-map">
             <div class="tooltip" id="tooltip"></div>
@@ -26,7 +58,7 @@
 
     <!-- Technology Section -->
     <section class="tech-section">
-        <h2>Advancements in EV Technology</h2>
+        <h2 id="tech-sectiona">Advancements in EV Technology</h2>
         <div class="tech-items">
             <div class="tech-item">
                 <h3>Battery Technology</h3>
@@ -50,5 +82,10 @@
 
 
 <script src="tesla.js"></script>
+<script>
+    window.onload = function(){
+        window.scrollTo(0,0); 
+    }
+</script>
 </body>
 </html>

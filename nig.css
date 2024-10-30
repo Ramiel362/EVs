@@ -15,9 +15,9 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: url('ev-background.jpg') no-repeat center center/cover;
+    background: url('Home-Hero.jpg') no-repeat center center/cover;
     height: 100vh;
-    color: white;
+    color: lawngreen;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,9 +28,24 @@ a{
     background-color: greenyellow;
     text-decoration: none;
     color: #434343;
-    
+    font-weight: 900;
+    width: 400px;
     padding: 15px;
-    border: 3px ridge white;
+    border-radius: 10px;
+    border: 7px solid greenyellow;
+}
+#firsta{
+    padding: 10 10 10;
+}
+
+#seconda{
+    margin-top: 19px;
+    padding: 10 10 10;
+}
+#thirda{
+    margin-top: 19px;
+    margin-bottom: 19px;
+    padding: 10 10 10;
 }
 .hero-section h1 {
     font-size: 3rem;
@@ -59,6 +74,8 @@ a{
 .map-section {
     padding: 50px 20px;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 .map-container {
@@ -80,8 +97,9 @@ a{
 /* Technology Section */
 .tech-section {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: black;
     text-align: center;
+    height:100vh;
 }
 
 .tech-items {
@@ -94,7 +112,7 @@ a{
     flex: 1;
     margin: 10px;
     padding: 20px;
-    background-color: white;
+    background-color: black;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -114,3 +132,66 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.ev-background-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    background-color: black;
+    height: 100vh;
+
+  }
+  
+  .ev-card {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+  }
+  #leftcard{
+    justify-content: left;
+  }
+  #rightcard{
+    justify-content: right;
+  }
+  
+  .ev-card h2 {
+    font-size: 24px;
+    color: lawngreen;
+    margin-bottom: 16px;
+  }
+  
+  .ev-card p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  .ev-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+  }
+  
+  .ev-img {
+    width: 175px;
+    height: 175px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
