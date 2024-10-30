@@ -53,22 +53,12 @@ a{
 }
 
 .hero-section p {
-    font-size: 1.2rem;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: #434343;
     margin-bottom: 20px;
 }
 
-.hero-section button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #43ac0b;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.hero-section button:hover {
-    background-color: #087308;
-}
 
 /* Map Section */
 .map-section {
@@ -77,9 +67,15 @@ a{
     background-color: black;
     color: white;
 }
+.map-section h2{
+    color: lawngreen;
+}
 
 .map-container {
     position: relative;
+}
+.map-section img{
+    border: 10px ridge #43ac0b ;
 }
 
 .tooltip {
@@ -99,36 +95,73 @@ a{
     padding: 50px 20px;
     background-color: black;
     text-align: center;
-    height:100vh;
+    color: lawngreen;
+    height: 100vh;
+}
+
+.tech-section h2 {
+    font-size: 2rem;
+    color: lawngreen;
+    margin-bottom: 20px;
 }
 
 .tech-items {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .tech-item {
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
     background-color: black;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    flex: 1 1 300px; /* Responsive card size */
+    max-width: 350px;
+    border: 2px solid lawngreen;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .tech-item h3 {
+    font-size: 1.5rem;
+    color: lawngreen;
     margin-bottom: 10px;
 }
 
 .tech-item p {
     font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.tech-img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .tech-items {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: black;
+    color: lawngreen;
     text-align: center;
     padding: 10px;
 }
