@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             chargingStations: 500000,
             biggestContributor: "USA",
             countries: [
-                { name: "USA", evCount: 3300000, recDate: 2024 },
+                { name: "USA", evCount: 3300000, recDate: 2023 },
                 { name: "Canada", evCount: 700000 },
                 { name: "Mexico", evCount: 300000 }
             ]
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <strong>EVs:</strong> ${continent.evCount.toLocaleString()}<br>
                     <strong>Charging Stations:</strong> ${continent.chargingStations.toLocaleString()}<br>
                     <strong>Biggest Contributor:</strong> ${continent.biggestContributor}<br>
-                    <strong>Countries:</strong><br>
+                    <strong>Top 3 Contributors:</strong><br>
                     ${continent.countries.map(country => `${country.name}: ${country.evCount.toLocaleString()} EVs`).join('<br>')}
                 `;
                 tooltip.style.display = 'block';
