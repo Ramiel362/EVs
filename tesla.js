@@ -7,66 +7,66 @@ document.addEventListener('DOMContentLoaded', () => {
         NorthAmerica: {
             name: "North America",
             evCount: 3000000,
-            chargingStations: 500000,
+            chargingStations: 135000,
             biggestContributor: "USA",
             countries: [
-                { name: "USA", evCount: 3300000, recDate: 2023 },
-                { name: "Canada", evCount: 700000 },
-                { name: "Mexico", evCount: 300000 }
+                { name: "USA", evCount: 2800000, recDate: 2023 },
+                { name: "Canada", evCount: 60000 },
+                { name: "Mexico", evCount: 25000 }
             ]
         },
         SouthAmerica: {
             name: "South America",
-            evCount: 500000,
-            chargingStations: 80000,
+            evCount: 50000,
+            chargingStations: 5000,
             biggestContributor: "Brazil",
             countries: [
-                { name: "Brazil", evCount: 400000 },
-                { name: "Argentina", evCount: 70000 },
-                { name: "Chile", evCount: 30000 }
+                { name: "Brazil", evCount: 30000 },
+                { name: "Chile", evCount: 10000 },
+                { name: "Argentina", evCount: 7000 }
             ]
         },
         Europe: {
             name: "Europe",
-            evCount: 7000000,
-            chargingStations: 1000000,
+            evCount: 8400000,
+            chargingStations: 450000,
             biggestContributor: "Germany",
             countries: [
-                { name: "Germany", evCount: 2500000 },
-                { name: "France", evCount: 2000000 },
-                { name: "UK", evCount: 1500000 }
+                { name: "Germany", evCount: 1800000 },
+                { name: "France", evCount: 1100000 },
+                { name: "UK", evCount: 1000000 }
             ]
         },
         Africa: {
             name: "Africa",
-            evCount: 200000,
-            chargingStations: 10000,
+            evCount: 10000,
+            chargingStations: 1000,
             biggestContributor: "South Africa",
             countries: [
-                { name: "South Africa", evCount: 100000 },
-                { name: "Nigeria", evCount: 50000 },
-                { name: "Kenya", evCount: 30000 }
+                { name: "South Africa", evCount: 5000 },
+                { name: "Egypt", evCount: 2000 },
+                { name: "Kenya", evCount: 1000 }
             ]
         },
         Asia: {
             name: "Asia",
-            evCount: 12000000,
+            evCount: 11000000,
             chargingStations: 3000000,
             biggestContributor: "China",
             countries: [
-                { name: "China", evCount: 8000000 },
-                { name: "Japan", evCount: 2500000 },
-                { name: "India", evCount: 1000000 }
+                { name: "China", evCount: 9500000 },
+                { name: "India", evCount: 1700000 },
+                { name: "Japan", evCount:  150000}
             ]
         },
         Oceania: {
             name: "Oceania",
-            evCount: 400000,
-            chargingStations: 50000,
+            evCount: 80000,
+            chargingStations: 3000,
             biggestContributor: "Australia",
             countries: [
-                { name: "Australia", evCount: 350000 },
-                { name: "New Zealand", evCount: 50000 }
+                { name: "Australia", evCount: 65000 },
+                { name: "New Zealand", evCount: 10000 }
             ]
         }
     };
@@ -166,3 +166,25 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Elements not found in DOM.");
     }
 });
+// JavaScript to enlarge image on click
+function enlargeImage(imgElement) {
+    // Create overlay and enlarged image elements
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+
+    const enlargedImg = document.createElement('img');
+    enlargedImg.src = imgElement.src;
+    enlargedImg.classList.add('enlarged-img');
+
+    // Append elements and add close event on overlay
+    overlay.appendChild(enlargedImg);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener('click', () => overlay.remove());
+
+    // Close with "Escape" key
+    document.addEventListener('keydown', (event) => {
+        if (event.key === "Escape") overlay.remove();
+    });
+}
+
